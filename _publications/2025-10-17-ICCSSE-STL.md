@@ -1,9 +1,10 @@
 ---
-title: "Optimal-transport-based Geometry Modeling for Material Extrusion Additive Manufacturing"
+title: "Optimal Trajectory Generation and Feedback Tension Control of a Robotic Space Tether
+ Launching System"
 collection: publications
 category: conferences
 permalink: /publication/2025-10-17-ICCSSE-STL
-excerpt: 'Optimal-transport-based Geometry Modeling for Material Extrusion Additive Manufacturing'
+excerpt: 'Optimal Trajectory Generation and Feedback Tension Control of a Robotic Space Tether Launching System'
 date: 2025-10-17
 venue: '2025 IEEE 11th International Conference on Control Science and Systems Engineering (ICCSSE)'
 paperurl: 'http://academicpages.github.io/files/paper5.pdf'
