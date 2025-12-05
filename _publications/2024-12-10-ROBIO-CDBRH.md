@@ -2,7 +2,7 @@
 title: "Design, Manufacturing, and Control of a Cable-Driven Bionic Robotic Hand"
 collection: publications
 category: conferences
-permalink: /publication/2025-12-10-ROBIO-CDBRH
+permalink: /publication/2024-12-10-ROBIO-CDBRH
 excerpt: 'Design, Manufacturing, and Control of a Cable-Driven Bionic Robotic Hand'
 date: 2024-12-10
 venue: '2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)s'
