@@ -1,7 +1,7 @@
 ---
 title: "Optimal-transport-based Geometry Modeling for Material Extrusion Additive Manufacturing"
 collection: publications
-category: Journals
+category: conferences
 permalink: /publication/2025-10-17-ICCSSE-STL
 excerpt: 'Optimal-transport-based Geometry Modeling for Material Extrusion Additive Manufacturing'
 date: 2025-10-17
