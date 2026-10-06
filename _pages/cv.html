@@ -1,0 +1,32 @@
+---
+layout: academic
+title: "Curriculum Vitae"
+eyebrow: "Background & experience"
+intro: "Robotics researcher with experience in analytical modeling, motion control, embedded implementation, and experimental validation."
+permalink: /cv/
+redirect_from:
+  - /resume
+  - /cv-json/
+  - /resume-json
+---
+<div class="cv-download"><a class="button" href="{{ '/files/LiuShuai_CV.pdf' | relative_url }}">Download original CV (Chinese) <span aria-hidden="true">↗</span></a><p class="muted">The downloadable CV is the original document. The publication list below includes the latest verified updates.</p></div>
+<div class="cv-grid">
+  <div>
+    <section class="cv-section"><h2>Education</h2>
+      <div class="education-item"><h3>PhD research in Mechanical Engineering</h3><p>Hong Kong University of Science and Technology · Since 2022</p><p>Advisor: Prof. Molong Duan · Manufacturing and Aerospace Automation Lab</p></div>
+      <div class="education-item"><h3>MSc in Mechanical Engineering</h3><p>Hong Kong University of Science and Technology · 2021–2022</p></div>
+      <div class="education-item"><h3>BE in Measurement and Control Technology and Instruments</h3><p>Huazhong University of Science and Technology · 2016–2020</p></div>
+    </section>
+    <section class="cv-section"><h2>Research experience</h2><ul><li>Cable-driven parallel robot design, modeling, error compensation, and disturbance rejection.</li><li>Mobile robotic inspection, localization with surface feature tracking, and position compensation.</li><li>Trajectory optimization and tension control for robotic space tether launching systems.</li><li>System identification and vibration compensation for additive manufacturing.</li></ul></section>
+    <section class="cv-section"><h2>Teaching</h2><ul><li>Teaching Assistant, MECH 2520 — Design and Manufacturing I, HKUST, Spring 2025.</li><li>Teaching Assistant, MECH 3630 — Electrical Technology, HKUST, Spring 2024.</li></ul></section>
+  </div>
+  <div>
+    <section class="cv-section"><h2>Technical skills</h2><ul><li>Python, C/C++, MATLAB</li><li>Simulink, SolidWorks, ANSYS</li><li>Gazebo, Linux, STM32 development</li><li>Robot dynamics, system identification, trajectory optimization, and SLAM</li></ul></section>
+    <section class="cv-section"><h2>Selected awards</h2><ul><li>National second prize, intelligent precision assembly competition, China University Students Mechanical Engineering Innovation and Creativity Competition, 2024.</li><li>First prize, Guangdong–Hong Kong–Macao regional intelligent precision assembly competition, 2024.</li><li>HKUST student scholarship, 2022.</li><li>HUST self-improvement scholarship, 2018.</li></ul></section>
+    <section class="cv-section"><h2>Contact</h2><p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p><p><a href="{{ site.author.googlescholar }}">Google Scholar ↗</a></p><p><a href="{{ site.author.orcid }}">ORCID ↗</a></p></section>
+  </div>
+</div>
+<section class="cv-papers"><div class="section-heading"><h2>Publications</h2><a href="{{ '/publications/' | relative_url }}">Full publication list →</a></div>
+{% assign papers = site.publications | sort: 'date' | reverse %}
+{% for paper in papers %}{% include paper-row.html %}{% endfor %}
+</section>

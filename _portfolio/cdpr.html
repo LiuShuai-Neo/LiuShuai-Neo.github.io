@@ -1,0 +1,29 @@
+---
+layout: academic
+title: "Cable-Driven Parallel Robots"
+collection: portfolio
+permalink: /portfolio/cdpr/
+hide_title: true
+description: "Design, modeling, and anti-disturbance trajectory generation for a six-degree-of-freedom cable-driven parallel robot for additive manufacturing."
+---
+<a class="back-link" href="{{ '/portfolio/' | relative_url }}">← Portfolio</a>
+<div class="project-intro">
+  <p class="eyebrow">01 / Cable-driven robotics</p>
+  <h1>Precise motion.<br>Resilient to disturbance.</h1>
+  <p class="lead">Design, modeling, and trajectory optimization of a cable-driven parallel robot (CDPR) for additive manufacturing.</p>
+  <p class="project-meta">HKUST · Manufacturing and Aerospace Automation Lab · CASE 2023 / Mechanism and Machine Theory 2025</p>
+</div>
+<figure>
+  <img class="project-cover" src="{{ '/images/projects/cdpr-prototype.webp' | relative_url }}" alt="Laboratory prototype of the cable-driven parallel robot and its printing platform" width="1200" height="900" fetchpriority="high">
+  <figcaption>The 6-DOF CDPR prototype used for modeling, trajectory tracking, and additive manufacturing experiments.</figcaption>
+</figure>
+<div class="project-body">
+  <nav class="project-index" aria-label="Project sections"><a href="#challenge">The challenge</a><a href="#approach">The approach</a><a href="#validation">Experiments</a><a href="#results">Results</a><a href="#publications">Publications</a></nav>
+  <div class="prose">
+    <section id="challenge"><h2>The challenge</h2><p>Cable-driven robots offer a flexible, scalable approach to large-workspace manufacturing. Cable elasticity and external forces can displace the printing nozzle, making accurate tracking difficult. Outdoor applications introduce an additional challenge: wind disturbances.</p><p>For printing tasks that constrain nozzle position but leave some freedom in orientation, that freedom can be used to improve the robot’s resistance to disturbances.</p></section>
+    <section id="approach"><h2>The approach</h2><ul><li><strong>Model the mechanism.</strong> Relate cable geometry, tension, and elasticity to the end-effector pose and nozzle position.</li><li><strong>Quantify disturbance sensitivity.</strong> Use a variation-based analytical framework to evaluate directional stiffness and the effect of external forces.</li><li><strong>Optimize orientation.</strong> Generate an anti-disturbance trajectory (ADTG) while maintaining the required nozzle path.</li><li><strong>Make it practical.</strong> Fit sampled orientation optimization results with a shallow neural network for efficient implementation.</li></ul><figure><img src="{{ '/images/projects/cdpr-overview.webp' | relative_url }}" alt="Graphical abstract showing CDPR geometry, CAD model, prototype, and comparative tracking and printing results" width="1237" height="1600" loading="lazy"><figcaption>Research overview: mechanism design, disturbance analysis, and simulation and experimental comparisons.</figcaption></figure></section>
+    <section id="validation"><h2>Simulation & experimental validation</h2><p>The method was evaluated using dynamic simulation and a physical CDPR with a printing end effector. Laser-tracker measurements capture nozzle motion; impact-hammer tests assess frequency response; gust experiments compare ADTG with tension-considering compensation (TCMC).</p><figure><img src="{{ '/images/projects/cdpr-gust-setup.webp' | relative_url }}" alt="End effector with wind baffles, tracking target, IMU, and gust source in the experimental setup" width="750" height="1000" loading="lazy"><figcaption>Gust-rejection setup with baffles on the end effector and a tracking target for motion measurement.</figcaption></figure><figure><video controls playsinline preload="none" poster="{{ '/images/projects/cdpr-gust-setup.webp' | relative_url }}" aria-label="CDPR printing experiment under gust disturbance"><source src="{{ '/files/cdpr/printing-under-gust.mp4' | relative_url }}" type="video/mp4">Your browser does not support embedded video. <a href="{{ '/files/cdpr/printing-under-gust.mp4' | relative_url }}">Download the experiment video.</a></video><figcaption>Printing experiment video from the project presentation.</figcaption></figure></section>
+    <section id="results"><h2>What the experiments show</h2><p>Optimizing orientation improves directional stiffness and nozzle tracking under gusts. Surface scanning of the printed parts provides a second way to evaluate the effect on manufacturing quality.</p><div class="metric-row"><div class="metric"><strong>0.3857 mm</strong><span>RMS surface height<br>TCMC baseline</span></div><div class="metric"><strong>0.0928 mm</strong><span>RMS surface height<br>Proposed ADTG method</span></div></div><p class="source-note">Values from the scanned printed-part comparison in the project presentation (slide 21), describing this experimental condition.</p></section>
+    <section id="publications"><h2>Related publications</h2><p><strong>Shuai Liu and Molong Duan.</strong> Cable-driven parallel robot trajectory generation with optimized orientation considering disturbance rejection. <em>Mechanism and Machine Theory</em>, 210, 106016, 2025.<br><a href="https://doi.org/10.1016/j.mechmachtheory.2025.106016">Read paper ↗</a></p><p><strong>Molong Duan, Jiaquan Feng, and Shuai Liu.</strong> Design, manufacturing, modelling, and control of a cable-driven parallel robot for additive manufacturing. <em>IEEE CASE</em>, 2023.<br><a href="https://doi.org/10.1109/CASE56687.2023.10260537">Read paper ↗</a></p><div class="paper-actions"><a class="button button-secondary" href="{{ '/files/cdpr/graphical-abstract.pdf' | relative_url }}">Graphical abstract ↗</a></div></section>
+  </div>
+</div>

@@ -1,14 +1,16 @@
 ---
-title: "Simulated annealing wrapped generic ensemble fault diagnostic strategy for VRF system"
+title: Simulated annealing wrapped generic ensemble fault diagnostic strategy for VRF system
 collection: publications
 category: manuscripts
-permalink: /publication/2020-10-01-EnergyAndBuildings-VRF
-excerpt: 'Simulated annealing wrapped generic ensemble fault diagnostic strategy for VRF system'
+permalink: /publication/2020-10-01-EnergyAndBuildings-VRF/
+excerpt: An ensemble approach combines simulated-annealing-based feature selection and multiple learners to diagnose
+  refrigerant charge, valve, and compressor faults in variable refrigerant flow systems.
 date: 2020-10-01
-venue: 'Energy and Buildings'
-slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Li, Z., Wei, W., Hu, K., Chen, H., Wang, Y., Liu, Q. and Liu, S., 2020. Simulated annealing wrapped generic ensemble fault diagnostic strategy for VRF system. Energy and Buildings, 224, p.110281.'
+venue: Energy and Buildings
+paperurl: https://doi.org/10.1016/j.enbuild.2020.110281
+citation: Li, Z., Wei, W., Hu, K., Chen, H., Wang, Y., Liu, Q. and Liu, S., 2020. Simulated annealing wrapped generic
+  ensemble fault diagnostic strategy for VRF system. Energy and Buildings, 224, p.110281.
+authors: Z. Li, W. Wei, K. Hu, H. Chen, Y. Wang, Q. Liu, S. Liu
 ---
 
-Variable refrigerant flow (VRF) systems have gained much attention and been widely used in commercial and residential buildings benefitting from their competitive advantages. However, after long-term operation in a complex environment, various faults may occur in the VRF systems, resulting in failure to meet users comfort requirements and even unnecessary increase in energy consumption. This paper proposes a simulated annealing wrapped generic ensemble fault diagnosis strategy for typical faults of VRF systems, such as refrigerant charge amount (RCA) faults, valve faults, and compressor liquid return (LF) faults. The simulated annealing algorithm based on random forest (SA-RF) is first utilized to perform feature selection process on the three kinds of fault datasets to select the optimal variables that can well characterize the fault states, which can improve the modeling efficiency while reducing the data dimensionality. Then five component learners and the proposed ensemble model based on them are established adopting the optimal variables as input variables. Through visualizing the error evolution and margin of the boosting models built in the first stage of the integration process, it was found that the boosting models can effectively avoid overfitting and most samples are correctly classified with high confidence. By comparing with the five component learners, it is concluded that the boosting strategy in the first stage can improve the diagnostic performance of the models, and the weighted voting integration strategy in the second stage can further improve the diagnostic performance of the model. The final ensemble model can effectively compensate for the deficiencies of each component learners and its diagnostic accuracy for the three fault data sets is as high as 95.37%, 99.36% and 98.3%, respectively, indicating that the model can be applied to diagnose the three types of faults in VRF system at the same time, showing a high versatility.
+An ensemble approach combines simulated-annealing-based feature selection and multiple learners to diagnose refrigerant charge, valve, and compressor faults in variable refrigerant flow systems.

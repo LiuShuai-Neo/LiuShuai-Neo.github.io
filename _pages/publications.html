@@ -1,36 +1,17 @@
 ---
-layout: archive
+layout: academic
 title: "Publications"
+eyebrow: "Research output"
+intro: "Work on robotic systems, motion control, and manufacturing — with links to the original papers."
 permalink: /publications/
-author_profile: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<div class="scholar-note"><p>For live citation counts and the latest indexed papers, visit my Google Scholar profile.</p><a href="{{ site.author.googlescholar }}">Google Scholar ↗</a></div>
+{% assign papers = site.publications | sort: 'date' | reverse %}
+{% for category in site.publication_category %}
+  {% assign category_papers = papers | where: 'category', category[0] %}
+  {% if category_papers.size > 0 %}
+  <section class="publication-group"><h2>{{ category[1].title }}</h2>
+    {% for paper in category_papers %}{% include paper-row.html %}{% endfor %}
+  </section>
+  {% endif %}
+{% endfor %}

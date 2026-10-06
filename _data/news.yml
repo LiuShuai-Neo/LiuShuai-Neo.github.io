@@ -1,0 +1,10 @@
+# Labels use bibliographic years; publisher issue dates are not acceptance dates.
+- label: "2026"
+  text: "Co-authored work on sensorless contact force estimation appears in Control Engineering Practice (online article; November 2026 issue)."
+  url: "https://doi.org/10.1016/j.conengprac.2026.107140"
+- label: "2026"
+  text: "Our work on mobile robot inspection of building plenum spaces is published in Automation in Construction."
+  url: "https://doi.org/10.1016/j.autcon.2026.106889"
+- label: "2025"
+  text: "Our CDPR study on orientation optimization for disturbance rejection is published in Mechanism and Machine Theory."
+  url: "https://doi.org/10.1016/j.mechmachtheory.2025.106016"

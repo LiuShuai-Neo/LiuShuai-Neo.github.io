@@ -1,152 +1,140 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Shuai Liu",
+    "email": "sliucr@connect.ust.hk",
+    "website": "https://liushuai-neo.github.io",
+    "summary": "Robotics researcher at HKUST working on cable-driven robots, modeling, motion control, and robotic inspection.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Hong Kong",
+      "countryCode": "HK"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=HYsXHHsAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0006-5954-7520"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "LiuShuai-Neo",
+        "url": "https://github.com/LiuShuai-Neo"
       }
     ]
   },
-  "work": [],
   "education": [
     {
       "institution": "Hong Kong University of Science and Technology",
-      "area": "Ph.D. in Mechanical Engineering",
-      "studyType": "Full-time",
-      "startDate": "2022-09-01",
-      "endDate": "",
-      "gpa": 3.9,
-      "courses": []
+      "area": "Mechanical Engineering",
+      "studyType": "PhD research",
+      "startDate": "2022",
+      "endDate": ""
     },
     {
       "institution": "Hong Kong University of Science and Technology",
-      "area": "MSC. in Mechanical Engineering",
-      "studyType": "Full-time",
-      "startDate": "2021-09-01",
-      "endDate": "2022-08-31",
-      "gpa": 3.9,
-      "courses": []
+      "area": "Mechanical Engineering",
+      "studyType": "MSc",
+      "startDate": "2021",
+      "endDate": "2022"
     },
     {
       "institution": "Huazhong University of Science and Technology",
-      "area": "B.E. in Measurement and control technology and instruments",
-      "studyType": "Full-time",
-      "startDate": "2016-09-01",
-      "endDate": "2020-06-30",
-      "gpa": 3.9,
-      "courses": []
+      "area": "Measurement and Control Technology and Instruments",
+      "studyType": "BE",
+      "startDate": "2016",
+      "endDate": "2020"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": [
+        "Python",
+        "C/C++",
+        "MATLAB"
+      ]
+    },
+    {
+      "name": "Engineering tools",
+      "keywords": [
+        "Simulink",
+        "SolidWorks",
+        "ANSYS",
+        "Gazebo",
+        "Linux",
+        "STM32"
+      ]
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Mobile robot inspection of building plenum spaces via vision-based multi-sensor fault detection",
+      "publisher": "Automation in Construction",
+      "releaseDate": "2026-07-01",
+      "website": "https://doi.org/10.1016/j.autcon.2026.106889",
+      "summary": "A mobile robotic inspection method combines semantic segmentation and object tracking with geometric and thermal features. Tests on data collected from building plenum spaces evaluate detection robustness under occlusion, sensor noise, and environmental variation."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Sensorless contact forces estimation for robotic manipulators using dual-stage temporal-residual neural network compensation",
+      "publisher": "Control Engineering Practice",
+      "releaseDate": "2026-11",
+      "website": "https://doi.org/10.1016/j.conengprac.2026.107140",
+      "summary": "A hybrid model estimates end-effector contact forces and moments from robot signals. Two stages of temporal-residual learning compensate dynamics errors and remaining wrench errors, with uncertainty estimates and experimental comparisons."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Optimal Trajectory Generation and Feedback Tension Control of a Robotic Space Tether Launching System",
+      "publisher": "2025 IEEE 11th International Conference on Control Science and Systems Engineering (ICCSSE)",
+      "releaseDate": "2025-10-17",
+      "website": "https://doi.org/10.1109/ICCSSE67426.2025.11552484",
+      "summary": "A robotic arm accelerates and launches a tethered payload. Nonlinear modeling includes distributed tether mass and directional tension coupling; optimized feedforward motion and tension feedback are evaluated in simulation for accurate payload delivery."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Optimal-transport-based geometry modeling for material extrusion additive manufacturing",
+      "publisher": "Journal of Manufacturing Processes",
+      "releaseDate": "2025-11-30",
+      "website": "https://doi.org/10.1016/j.jmapro.2025.09.042",
+      "summary": "An optimal-transport model describes how a moving nozzle reshapes extruded material. Two- and three-dimensional formulations predict line and corner profiles while considering viscous resistance, gravity, and changes in surface geometry."
+    },
+    {
+      "name": "Cable-driven parallel robot trajectory generation with optimized orientation considering disturbance rejection",
+      "publisher": "Mechanism and Machine Theory",
+      "releaseDate": "2025-08-01",
+      "website": "https://doi.org/10.1016/j.mechmachtheory.2025.106016",
+      "summary": "An analytical disturbance-sensitivity framework supports orientation optimization for a cable-driven parallel robot. The resulting anti-disturbance trajectory generator improves directional stiffness and nozzle tracking in simulations and gust experiments on a six-degree-of-freedom printing prototype."
+    },
+    {
+      "name": "Design, Manufacturing, and Control of a Cable-Driven Bionic Robotic Hand",
+      "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+      "releaseDate": "2024-12-10",
+      "website": "https://ieeexplore.ieee.org/document/10907438",
+      "summary": "A cable-driven bionic robotic hand combines a lightweight mechanical design with coordinated control. Workspace, grasping, and free-space motion experiments evaluate its performance."
+    },
+    {
+      "name": "In-situ additive manufacturing deposition trajectory monitoring and compensation with thermal camera",
+      "publisher": "Additive Manufacturing",
+      "releaseDate": "2023-09-25",
+      "website": "https://doi.org/10.1016/j.addma.2023.103820",
+      "summary": "Thermal images track deposited geometry during material extrusion. Feature localization and deposition-direction alignment support dynamic extrusion-rate compensation to improve printing accuracy around corners."
+    },
+    {
+      "name": "Design, Manufacturing, Modelling, and Control of a Cable-Driven Parallel Robot for Additive Manufacturing",
+      "publisher": "2023 IEEE 19th International Conference on Automation Science and Engineering (CASE)",
+      "releaseDate": "2023-08-26",
+      "website": "https://doi.org/10.1109/CASE56687.2023.10260537",
+      "summary": "A six-degree-of-freedom cable-driven robot prototype supports additive manufacturing. A compensation method accounts for cable tension and positioning errors, with experimental verification of tracking and printing performance."
+    },
+    {
+      "name": "Simulated annealing wrapped generic ensemble fault diagnostic strategy for VRF system",
+      "publisher": "Energy and Buildings",
+      "releaseDate": "2020-10-01",
+      "website": "https://doi.org/10.1016/j.enbuild.2020.110281",
+      "summary": "An ensemble approach combines simulated-annealing-based feature selection and multiple learners to diagnose refrigerant charge, valve, and compressor faults in variable refrigerant flow systems."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "work": [],
+  "languages": [],
+  "interests": [],
+  "references": []
 }

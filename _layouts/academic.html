@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title | escape }} · {{ site.title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/images/Shuai.png' | absolute_url }}">
+    <meta name="theme-color" content="#fafbf9">
+    <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="{{ '/' | relative_url }}">Shuai Liu<span>刘帅</span></a>
+        <nav aria-label="Main navigation">
+          {% for link in site.data.navigation.main %}
+          <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% elsif link.url == '/portfolio/' and page.collection == 'portfolio' %} aria-current="page"{% elsif link.url == '/publications/' and page.collection == 'publications' %} aria-current="page"{% endif %}>{{ link.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="shell {% if page.home %}home-main{% else %}content-main{% endif %}">
+      {% unless page.home or page.hide_title or page.collection == 'publications' %}
+      <div class="page-heading">
+        {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+        <h1>{{ page.title }}</h1>
+        {% if page.intro %}<p class="lead">{{ page.intro }}</p>{% endif %}
+      </div>
+      {% endunless %}
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>© {{ site.time | date: '%Y' }} Shuai Liu <span>Robotics · Modeling · Control</span></p>
+        <div><a href="mailto:{{ site.author.email }}">Email</a><a href="{{ site.author.googlescholar }}">Google Scholar</a><a href="https://github.com/{{ site.author.github }}">GitHub</a></div>
+      </div>
+    </footer>
+  </body>
+</html>

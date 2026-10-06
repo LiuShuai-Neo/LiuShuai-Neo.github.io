@@ -1,0 +1,12 @@
+<article class="paper-row">
+  <div class="paper-year">{{ paper.date | date: '%Y' }}</div>
+  <div>
+    <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+    <p class="paper-authors">{{ paper.authors | default: paper.citation | escape }}</p>
+    <p class="paper-venue">{{ paper.venue }}{% if paper.issue_note %} <span>· {{ paper.issue_note }}</span>{% endif %}</p>
+    <div class="text-links">
+      {% if paper.paperurl %}<a href="{{ paper.paperurl }}">Paper ↗</a>{% endif %}
+      {% if paper.projecturl %}<a href="{{ paper.projecturl | relative_url }}">Project →</a>{% endif %}
+    </div>
+  </div>
+</article>
