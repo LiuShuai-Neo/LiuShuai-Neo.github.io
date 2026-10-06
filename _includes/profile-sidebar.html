@@ -1,0 +1,19 @@
+<aside class="profile-sidebar" aria-label="Personal information and profiles">
+  <div class="profile-identity">
+    <a href="{{ '/' | relative_url }}" class="profile-photo-link" aria-label="Shuai Liu homepage"><img class="profile-photo" src="{{ '/images/Shuai.png' | relative_url }}" alt="Shuai Liu" width="160" height="160" fetchpriority="high"></a>
+    <div><h2 class="profile-name">{{ site.author.name }} <span lang="zh">刘帅</span></h2><p class="profile-role">Robotics & Control<br>Mechanical Engineering</p></div>
+  </div>
+  <p class="profile-affiliation">Hong Kong University of<br>Science and Technology</p>
+  <p class="profile-location">Hong Kong, China</p>
+  <ul class="profile-links">
+    <li><a href="mailto:{{ site.author.email }}"><span class="profile-icon" aria-hidden="true">@</span><span>{{ site.author.email }}</span></a></li>
+    <li><a href="{{ '/cv/' | relative_url }}"><span class="profile-icon" aria-hidden="true">CV</span><span>Curriculum Vitae</span></a></li>
+    <li><a href="{{ '/files/LiuShuai_CV.pdf' | relative_url }}"><span class="profile-icon" aria-hidden="true">↓</span><span>CV PDF · Chinese</span></a></li>
+    {% if site.author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/"><span class="profile-icon" aria-hidden="true">in</span><span>LinkedIn</span></a></li>{% endif %}
+    {% if site.author.github %}<li><a href="https://github.com/{{ site.author.github }}"><span class="profile-icon" aria-hidden="true">⌘</span><span>GitHub</span></a></li>{% endif %}
+    {% if site.author.googlescholar %}<li><a href="{{ site.author.googlescholar }}"><span class="profile-icon" aria-hidden="true">G</span><span>Google Scholar</span></a></li>{% endif %}
+    {% if site.author.orcid %}<li><a href="{{ site.author.orcid }}"><span class="profile-icon" aria-hidden="true">iD</span><span>ORCID</span></a></li>{% endif %}
+    <li><a href="https://maal.hkust.edu.hk/authors/shuai-liu/"><span class="profile-icon" aria-hidden="true">↗</span><span>HKUST profile</span></a></li>
+    <li><a href="https://maal.hkust.edu.hk/"><span class="profile-icon" aria-hidden="true">↗</span><span>MAAL Lab</span></a></li>
+  </ul>
+</aside>

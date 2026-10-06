@@ -1,34 +1,30 @@
 ---
 layout: academic
-title: "Robotics, Modeling & Control"
+title: "Robotics & Control Engineering"
 permalink: /
 home: true
-description: "Shuai Liu — robotics researcher at HKUST, working on cable-driven parallel robots, motion control, and robotic inspection."
+description: "Shuai Liu — robotics and control engineering portfolio. Robot modeling, trajectory optimization, embedded control, and experimental validation."
 redirect_from:
   - /about/
   - /about.html
 ---
-<section class="hero" aria-labelledby="hero-title">
-  <div>
-    <p class="eyebrow">Robotics researcher · HKUST</p>
-    <h1 id="hero-title">Shuai Liu <span lang="zh">刘帅</span></h1>
-    <p class="hero-tagline">Making robots move precisely<br>in a changing world.</p>
-    <p class="hero-bio">I study robot modeling, trajectory optimization, and control at the <a href="https://hkust.edu.hk/">Hong Kong University of Science and Technology</a>. In the <a href="https://maal.hkust.edu.hk/">Manufacturing and Aerospace Automation Lab</a>, advised by <a href="https://seng.hkust.edu.hk/about/people/faculty/molong-duan">Prof. Molong Duan</a>, I connect analytical models with experiments to improve robotic manufacturing and inspection.</p>
-    <div class="hero-links">
-      <a class="button" href="{{ '/portfolio/' | relative_url }}">Explore my work <span aria-hidden="true">→</span></a>
-      <a href="{{ site.author.googlescholar }}">Google Scholar ↗</a>
-      <a href="mailto:{{ site.author.email }}">Email ↗</a>
-    </div>
-  </div>
-  <figure class="hero-portrait">
-    <img class="portrait" src="{{ '/images/Shuai.png' | relative_url }}" width="245" height="286" alt="Portrait of Shuai Liu" fetchpriority="high">
-    <figcaption class="portrait-caption">Mechanical Engineering<br>Hong Kong, China</figcaption>
-  </figure>
+<section class="job-intro" aria-labelledby="about-heading">
+  <h1 id="about-heading">About me</h1>
+  <p>I work on <strong>robot modeling, motion control, and robotic inspection</strong>. My experience combines mechanism design, analytical modeling, trajectory optimization, and hands-on implementation — from simulation and embedded control to physical prototypes and experimental validation.</p>
+  <p>My research at the Hong Kong University of Science and Technology is advised by <a href="https://seng.hkust.edu.hk/about/people/faculty/molong-duan">Prof. Molong Duan</a> in the Manufacturing and Aerospace Automation Lab. I have worked on cable-driven parallel robots, mobile robot localization, and additive manufacturing systems.</p>
+  <p class="career-interests"><strong>Career interests:</strong> Robotics R&amp;D · Motion control · Autonomous systems engineering</p>
 </section>
-<section class="research-strip" aria-label="Research interests">
-  <div><h2>Cable-driven robotics</h2><p>Flexible mechanisms, orientation optimization, and disturbance rejection.</p></div>
-  <div><h2>Modeling & control</h2><p>Robot dynamics, trajectory planning, and precise motion under uncertainty.</p></div>
-  <div><h2>Robotic inspection</h2><p>Localization, surface feature tracking, and sensing for mobile robots.</p></div>
+<section class="home-section" aria-labelledby="skills-heading">
+  <div class="section-heading"><h2 id="skills-heading">Engineering skills</h2><a href="{{ '/cv/' | relative_url }}">View CV →</a></div>
+  <dl class="skills-list">
+    <div><dt>Modeling &amp; control</dt><dd>Robot kinematics and dynamics, system identification, trajectory optimization, and disturbance compensation. MATLAB / Simulink.</dd></div>
+    <div><dt>Robot development</dt><dd>Mechanism design, embedded implementation, sensor integration, and experimental validation. C/C++, Python, STM32, SolidWorks, and ANSYS.</dd></div>
+    <div><dt>Mobile robotics</dt><dd>LiDAR and RGB-D localization, surface feature tracking, and inspection. Simulation and development with Gazebo and Linux.</dd></div>
+  </dl>
+</section>
+<section class="home-section" aria-labelledby="project-heading">
+  <div class="section-heading"><h2 id="project-heading">Featured project</h2><a href="{{ '/portfolio/' | relative_url }}">All projects →</a></div>
+  {% include cdpr-feature.html %}
 </section>
 <section class="home-section" aria-labelledby="news-heading">
   <div class="section-heading"><h2 id="news-heading">Latest updates</h2><a href="{{ '/publications/' | relative_url }}">All publications →</a></div>
@@ -37,10 +33,6 @@ redirect_from:
     <li><time>{{ item.label }}</time><p>{{ item.text }} <a href="{{ item.url }}">Read paper ↗</a></p></li>
     {% endfor %}
   </ul>
-</section>
-<section class="home-section" aria-labelledby="project-heading">
-  <div class="section-heading"><h2 id="project-heading">Featured project</h2><a href="{{ '/portfolio/' | relative_url }}">Portfolio →</a></div>
-  {% include cdpr-feature.html %}
 </section>
 <section class="home-section" aria-labelledby="papers-heading">
   <div class="section-heading"><h2 id="papers-heading">Selected publications</h2><a href="{{ '/publications/' | relative_url }}">Complete list →</a></div>
